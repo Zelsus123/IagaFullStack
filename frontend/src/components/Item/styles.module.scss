@@ -1,0 +1,135 @@
+.normal {
+    width: 60px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: .3s;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    a:hover {
+        path{
+            fill: white;
+        }
+    }
+}
+
+.normal[aria-current] {
+    position: relative;
+    width: 60px;
+    height: 50px;
+    color: white;
+    background-color: rgba(39, 152, 39, 0.815);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: .3s;
+
+    div { 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    path {
+       color: white;
+    }
+
+    ::after {
+        content: '';
+        position: absolute;
+        width: 3px;
+        height: 50px;
+        background-color: white;
+        left: 0;
+        top: 0;
+    }
+}
+
+.normal:hover {
+    path{
+        fill: rgba(134, 121, 121, 0.453);
+    }
+}
+
+.link_open {
+    height: 50px;
+    display: flex;
+    padding-left: 25px;
+    align-items: center;
+    gap: 15px;
+    transition-duration: .3;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+
+    p {
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+        padding-bottom: 2px;
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.linkOpen[aria-current] {
+    position: relative;
+    height: 50px;
+    padding-left: 25px;
+    align-items: center;
+    gap: 15px;
+    transition-duration: .3s;
+    background-color: rgba(39, 152, 39, 0.815);
+
+    path{
+        fill: white;
+    }
+
+    ::after {
+        content: '';
+        position: absolute;
+        width: 3px;
+        background-color: white;
+        top: 0;
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+
+    p {
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+        padding-bottom: 2px;
+    }
+}
+
+.linkOpen:hover {
+
+        background-color: rgb(9, 99, 9);
+        transition: 0.3s;
+   
+    p {
+        color: white;
+    }
+
+    path {
+        fill: rgba(134, 121, 121, 0.453);
+    }
+}
